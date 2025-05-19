@@ -1,0 +1,83 @@
+int → enters → x = 5
+
+float → decimals → x = 3.14
+
+str → text → x = "Hola"
+
+bool → True o False
+
+---------------------------------
+RECORRER DEL 0 AL 5 (5 NO INCLÓS)
+for i in range(5):
+    print(i)
+
+for x in range(2, 30, 3): # Mostra 2, 5, 8, 11, 14, 17, 20, 23, 26, 29
+print(x)
+
+-----FUNCIONS-----
+CREA UNA FUNCIO ANOMENADA SALUDA I LA PODEM CRIDAR AMB UN VALOR
+	def saluda(nom):
+    		print("Hola", nom)
+	saluda("Anna")
+
+-sortida per pantalla
+	Hola, Anna
+
+
+-----DICCIONARIS-----
+persona = {"nom": "Anna", "edat": 20}
+print(persona["nom"])
+
+AFEGIR
+persona["altura"] = 1.65
+
+MODIFICAR
+persona["edat"] = 21
+
+ELIMINAR
+del persona["ciutat"]
+
+
+
+-----Llistes-----
+LONGITUD D'UNA LLISTA
+	llista = ["poma", "plàtan", "maduixa"]
+		print(len(llista))
+-sortida per pantalla
+	3
+AFEGIR
+   .append
+	fruits.append("maduixa")
+ELIMINAR
+   .remove
+	fruits.remove("plàtan")
+MODIFICAR
+fruites[3] = "llimona" #Modifica element 3
+fruites[1:3] = ["meló", "pera"] #Modifica elements 1 i 2
+fruites[-1] = "mora" #Modifica l'últim element
+fruites.append("coco") #Afegeix al final
+fruites.remove("mango") #Elimina l'element mango
+fruites.pop(0) #Elimina l'element a la posició 0
+fruites.pop() #Elimina el darrer l'element
+
+
+-----DE PYTHON a JSON-----
+import json
+
+# Convertir un diccionari Python a JSON
+persona = {"nom": "Anna", "edat": 20}
+json_string = json.dumps(persona)
+
+# Convertir JSON a diccionari Python
+persona_dict = json.loads(json_string)
+
+
+
+
+
+
+
+
+
+
+
